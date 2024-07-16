@@ -67,7 +67,7 @@ const Sign_up = () => {
         });
 
         const json = await response.json();
-
+        console.log("json",json);
         if (json.authtoken) {
 
             sessionStorage.setItem("auth-token", json.authtoken);
